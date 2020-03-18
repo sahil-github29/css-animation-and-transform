@@ -4,5 +4,52 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #272727;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 80px;
+  transition: all 1s;
+  overflow: hidden;
+  transition: color 1s;
+}
+a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateX(-100%);
+  background-color: #272727;
+  transition: transform 1s;
+  transform: rotateX(90deg);
+}
+a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateX(-100%);
+  background-color: #272727;
+  transition: transform 1s;
+  transform: rotateY(90deg);
+}
+a:hover:before {
+  transform: translateX(0);
+}
+a:hover:after {
+  transform: translateY(0);
+}
+a:hover {
+  color: white;
 }
