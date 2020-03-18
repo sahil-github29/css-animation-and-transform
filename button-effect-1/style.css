@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #272727;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 48px;
+  position: relative;
+}

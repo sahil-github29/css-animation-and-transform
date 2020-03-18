@@ -1,0 +1,107 @@
+button {
+  margin-top: 20px;
+}
+.transion {
+  height: 90px;
+  width: 290px;
+  font-size: 28px;
+  color: white;
+  border: none;
+  background-color: blue;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in ease-in-out;
+}
+
+.transion:hover {
+  background-color: green;
+}
+
+.move {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  transition-property: translate();
+  transition-duration: 1s;
+}
+
+.multiple-transition-properties {
+  height: 90px;
+  width: 290px;
+  font-size: 28px;
+  color: white;
+  border: none;
+  background-color: orange;
+  transition: background-color 1s ease-in 0.5s, color 1s ease-in-out 1s,
+    width 1s ease 2s;
+}
+.multiple-transition-properties:hover {
+  background-color: cadetblue;
+  color: black;
+  width: 500px;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+  transform: translate(900px, 0);
+}
+
+img.orchid {
+  margin: auto 600px;
+  transition: transform 1s;
+  /* transform-origin: top left; */
+  /* transform-origin: 30% 80%; */
+  transform-origin: center;
+}
+
+/* img.orchid:hover {
+  transform: translate(500px, 100px); 
+} */
+
+/* img.orchid:hover {
+  transform: scale(2, -3);
+} */
+
+/* it will rotate the image clockwise*/
+/* img.orchid:hover {
+  transform: rotate(20deg);
+} */
+/* img.orchid:hover {
+  transform: rotate(1turn);
+} */
+/* img.orchid:hover {
+  transform: rotate(200grad);
+} */
+/* img.orchid:hover {
+    transform: translateZ(300px);
+} */
+
+body {
+  perspective: 1000px;
+  font-family: "Montserrat", sans-serif;
+}
+img.orchid:hover {
+  transform: rotateY(180deg);
+}
+
+a,
+a:visited,
+a:link {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #333;
+  background-color: whilte;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+a:hover {
+  background-color: orangered;
+  color: white;
+}
