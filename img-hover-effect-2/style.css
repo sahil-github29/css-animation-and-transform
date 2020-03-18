@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  perspective: 1000px;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 1s, background-color 1s;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  transform: translateX(-100%);
+}
+
+.caption h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container:hover .caption {
+  transform: translateX(0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container:hover img {
+  transform: scale(1.7) rotate(15deg);
+}
