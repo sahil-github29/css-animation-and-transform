@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #272727;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 80px;
+  transition: color 0.3s, border-color 0.3;
+}
+
+a:hover {
+  border-color: red;
+  color: red;
+  animation: shake 0.2s linear 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
