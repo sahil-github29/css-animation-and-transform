@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  /*  animation-name: moving;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse; */
+  animation: moving 3s forwards 5 ease-in alternate 2s;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(1000px);
+  }
+  70% {
+    transform: translate(1000px, 500px);
+  }
+  80% {
+    transform: translate(1000px, 600px);
+  }
+  100% {
+    transform: translate(1200px, 600px);
+  }
+}
